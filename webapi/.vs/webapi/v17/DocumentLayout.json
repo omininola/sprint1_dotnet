@@ -1,38 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\",
+  "WorkspaceRootPath": "C:\\Users\\labsfiap\\Desktop\\dotnet\\sprint1_dotnet\\webapi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|c:\\users\\labsfiap\\desktop\\dotnet\\webapi\\model\\iotdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|solutionrelative:model\\iotdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|c:\\users\\labsfiap\\desktop\\dotnet\\sprint1_dotnet\\webapi\\controllers\\areacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|solutionrelative:controllers\\areacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|c:\\users\\labsfiap\\desktop\\dotnet\\webapi\\model\\motorbike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|solutionrelative:model\\motorbike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|c:\\users\\labsfiap\\desktop\\dotnet\\webapi\\controllers\\motorbikelot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|solutionrelative:controllers\\motorbikelot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|c:\\users\\labsfiap\\desktop\\dotnet\\webapi\\controllers\\motorbike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|solutionrelative:controllers\\motorbike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|c:\\users\\labsfiap\\desktop\\dotnet\\webapi\\model\\motorbikelot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|solutionrelative:model\\motorbikelot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|c:\\users\\labsfiap\\desktop\\dotnet\\webapi\\model\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|solutionrelative:model\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|c:\\users\\labsfiap\\desktop\\dotnet\\webapi\\model\\motorbikemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|solutionrelative:model\\motorbikemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|c:\\users\\labsfiap\\desktop\\dotnet\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|solutionrelative:webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|c:\\users\\labsfiap\\desktop\\dotnet\\sprint1_dotnet\\webapi\\controllers\\filialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A46FFFB-6D80-4E22-92D6-B5A97C187356}|webapi.csproj|solutionrelative:controllers\\filialcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +18,53 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MotorbikeLot.cs",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Controllers\\MotorbikeLot.cs",
-              "RelativeDocumentMoniker": "Controllers\\MotorbikeLot.cs",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Controllers\\MotorbikeLot.cs",
-              "RelativeToolTip": "Controllers\\MotorbikeLot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T22:43:27.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Motorbike.cs",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Controllers\\Motorbike.cs",
-              "RelativeDocumentMoniker": "Controllers\\Motorbike.cs",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Controllers\\Motorbike.cs",
-              "RelativeToolTip": "Controllers\\Motorbike.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T22:43:04.775Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MotorbikeLot.cs",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Model\\MotorbikeLot.cs",
-              "RelativeDocumentMoniker": "Model\\MotorbikeLot.cs",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Model\\MotorbikeLot.cs",
-              "RelativeToolTip": "Model\\MotorbikeLot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T22:34:27.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MotorbikeModel.cs",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Model\\MotorbikeModel.cs",
-              "RelativeDocumentMoniker": "Model\\MotorbikeModel.cs",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Model\\MotorbikeModel.cs",
-              "RelativeToolTip": "Model\\MotorbikeModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T22:33:43.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Status.cs",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Model\\Status.cs",
-              "RelativeDocumentMoniker": "Model\\Status.cs",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Model\\Status.cs",
-              "RelativeToolTip": "Model\\Status.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T22:33:14.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IotDevice.cs",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Model\\IotDevice.cs",
-              "RelativeDocumentMoniker": "Model\\IotDevice.cs",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Model\\IotDevice.cs",
-              "RelativeToolTip": "Model\\IotDevice.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
+              "Title": "AreaController.cs",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\dotnet\\sprint1_dotnet\\webapi\\Controllers\\AreaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AreaController.cs",
+              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\dotnet\\sprint1_dotnet\\webapi\\Controllers\\AreaController.cs",
+              "RelativeToolTip": "Controllers\\AreaController.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAcwHIAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T22:31:58.777Z",
+              "WhenOpened": "2025-05-20T23:11:58.427Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "d54da727-8fdc-4cdf-af1e-413ffec13e1a",
+        "Display": 0,
+        "X": 889,
+        "Y": 262,
+        "Width": 1111,
+        "Height": 612,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Motorbike.cs",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Model\\Motorbike.cs",
-              "RelativeDocumentMoniker": "Model\\Motorbike.cs",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\Model\\Motorbike.cs",
-              "RelativeToolTip": "Model\\Motorbike.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAwAAAA",
+              "Title": "FilialController.cs",
+              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\dotnet\\sprint1_dotnet\\webapi\\Controllers\\FilialController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FilialController.cs",
+              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\dotnet\\sprint1_dotnet\\webapi\\Controllers\\FilialController.cs",
+              "RelativeToolTip": "Controllers\\FilialController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T22:27:11.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "webapi",
-              "DocumentMoniker": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\webapi.csproj",
-              "RelativeDocumentMoniker": "webapi.csproj",
-              "ToolTip": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\webapi.csproj",
-              "RelativeToolTip": "webapi.csproj",
-              "ViewState": "AQIAABAAAAAgLtScBAIiwBEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-22T22:26:32.189Z",
+              "WhenOpened": "2025-05-20T22:55:44.141Z",
               "EditorCaption": ""
             }
           ]

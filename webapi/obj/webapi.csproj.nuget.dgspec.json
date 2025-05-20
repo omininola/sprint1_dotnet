@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\webapi.csproj": {}
+    "C:\\Users\\labsfiap\\Desktop\\dotnet\\sprint1_dotnet\\webapi\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\webapi.csproj": {
+    "C:\\Users\\labsfiap\\Desktop\\dotnet\\sprint1_dotnet\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\webapi.csproj",
+        "projectUniqueName": "C:\\Users\\labsfiap\\Desktop\\dotnet\\sprint1_dotnet\\webapi\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\webapi.csproj",
+        "projectPath": "C:\\Users\\labsfiap\\Desktop\\dotnet\\sprint1_dotnet\\webapi\\webapi.csproj",
         "packagesPath": "C:\\Softwares\\Nuget",
-        "outputPath": "C:\\Users\\labsfiap\\Desktop\\dotnet\\webapi\\obj\\",
+        "outputPath": "C:\\Users\\labsfiap\\Desktop\\dotnet\\sprint1_dotnet\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,13 +50,37 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[1.20.1, )"
+              "version": "[1.21.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Oracle.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.23.80, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[8.1.1, )"
             }
           },
           "imports": [
