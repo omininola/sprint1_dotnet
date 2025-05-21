@@ -13,30 +13,30 @@ namespace webapi.Controllers
         private readonly AppDbContext _context;
 
         public AreaController(AppDbContext context)
-        { 
+        {
             _context = context;
         }
 
         [HttpPost]
-        public async Task<ActionResult<AreaRespostaDTO>> CreateArea(AreaDTO areaDTO)
+        public async Task<ActionResult<AreaRespostaDTO>> CreateArea(AreaDTO areaDto)
         {
-            var filial = await _context.Filiais.FindAsync(areaDTO.FilialId);
+            var filial = await _context.Filiais.FindAsync(areaDto.FilialId);
 
             if (filial == null)
             {
-                return BadRequest("Filial não encontrada");                    
+                return BadRequest("Filial não encontrada");
             }
 
             var area = new Area
             {
-                Status = areaDTO.Status,
-                FilialId = areaDTO.FilialId
+                Status = areaDto.Status,
+                FilialId = areaDto.FilialId
             };
 
             _context.Areas.Add(area);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetArea), new { id = area.Id });
+            return CreatedAtAction(nameof(GetArea), new { id = area.Id }, area);
         }
 
         [HttpGet]
@@ -79,8 +79,36 @@ namespace webapi.Controllers
             return area;
         }
 
+        [HttpGet("search")]
+        public async Task<ActionResult<IEnumerable<AreaRespostaDTO>>> GetAreasByFilialName([FromQuery] string? filial, [FromQuery] string? status)
+        {
+            var query = _context.Areas.Include(a => a.Filial).AsQueryable();
+
+            if (!string.IsNullOrEmpty(filial))
+            {
+                query = query.Where(a => a.Filial.Nome.Equals(filial));
+            }
+
+            if (!string.IsNullOrEmpty(status))
+            {
+                query = query.Where(a => a.Status.Equals(status));
+            }
+
+            var areas = await query
+                .Select(a => new AreaRespostaDTO
+                {
+                    Id = a.Id,
+                    Status = a.Status,
+                    FilialId = a.FilialId,
+                    FilialNome = a.Filial.Nome
+                })
+                .ToListAsync();
+
+            return areas;
+        }
+
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutArea(int id, AreaDTO areaDTO)
+        public async Task<IActionResult> PutArea(int id, AreaDTO areaDto)
         {
             var area = await _context.Areas.FindAsync(id);
             if (area == null)
@@ -94,8 +122,8 @@ namespace webapi.Controllers
                 return BadRequest("Filial não encontrada");
             }
 
-            area.Status = areaDTO.Status;
-            area.FilialId = areaDTO.FilialId;
+            area.Status = areaDto.Status;
+            area.FilialId = areaDto.FilialId;
 
             _context.Entry(area).State = EntityState.Modified;
             await _context.SaveChangesAsync();

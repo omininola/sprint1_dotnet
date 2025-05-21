@@ -18,12 +18,12 @@ namespace webapi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<FilialRespostaDTO>> CreateFilial(FilialDTO filialDTO)
+        public async Task<ActionResult<FilialRespostaDTO>> CreateFilial(FilialDTO filialDto)
         {
             var filial = new Filial
             {
-                Nome = filialDTO.Nome,
-                Endereco = filialDTO.Endereco
+                Nome = filialDto.Nome,
+                Endereco = filialDto.Endereco
             };
 
             _context.Filiais.Add(filial);
@@ -42,6 +42,7 @@ namespace webapi.Controllers
               {
                   Id = f.Id,
                   Nome = f.Nome,
+                  Endereco = f.Endereco,
                   Areas = f.Areas.Select(a => new AreaResumoDTO
                   {
                       Id = a.Id,
@@ -63,24 +64,47 @@ namespace webapi.Controllers
               {
                   Id = f.Id,
                   Nome = f.Nome,
+                  Endereco = f.Endereco,
                   Areas = f.Areas.Select(a => new AreaResumoDTO
                   {
                       Id = a.Id,
                       Status = a.Status
                   }).ToList()
-            })
-          .FirstOrDefaultAsync();
+              })
+              .FirstOrDefaultAsync();
 
-        if (filial == null)
-        {
-          return NotFound();
+            if (filial == null)
+            {
+                return NotFound();
+            }
+
+            return filial;
         }
 
-        return filial;
-    }
+        [HttpGet("search")]
+        public async Task<ActionResult<IEnumerable<FilialRespostaDTO>>> GetFilialByName([FromQuery] string nome)
+        {
+            var filiais = await _context.Filiais
+                .Include(f => f.Areas)
+                .Where(f => f.Nome.Equals(nome))
+                .Select(f => new FilialRespostaDTO
+                {
+                    Id = f.Id,
+                    Nome = f.Nome,
+                    Endereco = f.Endereco,
+                    Areas = f.Areas.Select(a => new AreaResumoDTO
+                    {
+                        Id = a.Id,
+                        Status = a.Status,
+                    }).ToList()
+                })
+                .ToListAsync();
+
+            return filiais;
+        }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutFilial(int id, FilialDTO filialDTO)
+        public async Task<IActionResult> PutFilial(int id, FilialDTO filialDto)
         {
             var filial = await _context.Filiais.FindAsync(id);
 
@@ -89,14 +113,14 @@ namespace webapi.Controllers
                 return NotFound();
             }
 
-            filial.Nome = filialDTO.Nome;
-            filial.Endereco = filialDTO.Endereco;
+            filial.Nome = filialDto.Nome;
+            filial.Endereco = filialDto.Endereco;
 
             _context.Entry(filial).State = EntityState.Modified;
 
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok();
         }
 
         [HttpDelete("{id}")]
@@ -119,7 +143,7 @@ namespace webapi.Controllers
             _context.Filiais.Remove(filial);
 
             await _context.SaveChangesAsync();
-            
+
             return NoContent();
         }
     }
